@@ -56,7 +56,17 @@ a {
      justify-content: center;
 }
 /* Header */
-.header {
+.fixed-header {
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    background-color: #E6F0FF;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #E6F0FF;
     height: 100vh;
@@ -65,9 +75,8 @@ a {
 /* Navbar */
 .navbar {
     display: flex;
-    padding-top: 38px;
+    padding: 12px 0;
     align-items: center;
-
 }
 
 .navbar ul {
